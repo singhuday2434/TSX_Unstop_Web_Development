@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="head">This is task 1</h1>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium enim laborum cum placeat cupiditate odit provident iste molestias harum pariatur rerum voluptas non, numquam itaque, nisi veniam dolor. Earum sequi similique cupiditate velit nobis soluta totam, animi autem corrupti quos veritatis praesentium assumenda, suscipit error, ducimus magni eum incidunt?
+    </p>
+    <button type="button" id="button">
+         Change Background Colour
+    </button>
+    <script>
+        document.getElementById("button").addEventListener('click',()=>{
+            alert("Button clicked!!!");
+            document.body.style.backgroundColor="black"
+        })
+         window.addEventListener('load',()=>{
+            console.log("The task one loaded")
+         })
+    </script>
+</body>
+</html>

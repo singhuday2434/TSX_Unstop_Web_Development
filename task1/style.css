@@ -1,0 +1,13 @@
+#head{
+    background-color: rgb(203, 163, 240);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+
+} 
+#para{
+    background-color: rgb(154, 154, 243);
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
