@@ -5,41 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body::-webkit-scrollbar{
+            width: 5px;
+        }
+        body::-webkit-scrollbar-track{
+            background-color: rgb(44, 43, 43);
+
+        }
+        body::-webkit-scrollbar-thumb{
+            background-color: #fff777;
+            border-radius: 2rem;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding-right:3rem ;
+            position: sticky;
+             top: 0;
+             left: 0;
+             background-color:rgb(24, 22, 22);
+             z-index: 1000000;
+        }
       body{
         background-color: rgb(24, 22, 22);
+        position: relative;
       }
+      
         .navlist{
             list-style: none;
             display: flex;
-            gap: 3rem;
-            padding-left: 1rem;
-            color: #fff777;
+            
+            /* justify-content: center; */
+            gap: 5rem;
+            padding-top: 15px;
+            padding-left: 2rem;
+           margin-top:1rem;
+             color: white;
+            font-size: 1rem;
+     
         }
-        .navlist li:hover{
+        .navlist li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navlist li a:hover{
               cursor: pointer;
+              color: #fff777;
+        }
+        .main{
+        position: relative;
+        
+        margin: 1rem;
+        }
+        .article{
+            padding: 1rem;
         }
         .head{
             color: #fff777;
+            padding-left: 2rem;
         }
-        
+        .article h2{
+            color: white;
+            position: relative;
+        }
+        .article h2::before{
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: -1rem;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background-color: #fff777;
+          box-shadow: 0 0 10px 0;
+        }
+        .article p{
+            color: rgba(123, 120, 120, 0.861);
+                  text-align: justify;
+        }
+        #h2, #h3, #h1 {
+  scroll-margin-top: 80px; /* Adjust as per navbar height */
+}
+
 
     </style>
 </head>
 <body>
-    <header>
+     <div class="container">
+         <header>
           <h1 class="head">This is title</h1>
     </header>
     <nav>
          <ul class="navlist">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="#h1"> Heading 1</a></li>
+            <li><a href="#h2"> Heading 2</a></li>
+            <li><a href="#h3"> Heading 3</a></li>
+            <li><a href="#h4"> Heading 4</a></li>
          </ul>
     </nav>
+     </div>
     <main class="main">
         <article class="article">
-           <h2>
-            This is a Heading
+           <h2 id="h1" >
+            This is a Heading 1
            </h2>
            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, libero quis id ullam, deserunt adipisci officiis doloremque temporibus consectetur molestiae excepturi perferendis reiciendis praesentium dolorem. Amet accusamus commodi inventore qui.</p>
            <p>
@@ -48,7 +116,37 @@
            <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quam odio omnis ipsum? Molestias minima corrupti animi sed repudiandae facilis expedita soluta tempora? Dolorum, blanditiis. Dolorum ut blanditiis dolor, ducimus fugit doloremque consectetur, deleniti eos nisi, illo repellat neque vero.
            </p>
-
+             <h2 id="h2" >
+            This is a Heading 2
+           </h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, libero quis id ullam, deserunt adipisci officiis doloremque temporibus consectetur molestiae excepturi perferendis reiciendis praesentium dolorem. Amet accusamus commodi inventore qui.</p>
+           <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, voluptatem! Delectus, rerum saepe! Nisi, fuga cupiditate! Nulla delectus reprehenderit cupiditate?
+           </p>
+           <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quam odio omnis ipsum? Molestias minima corrupti animi sed repudiandae facilis expedita soluta tempora? Dolorum, blanditiis. Dolorum ut blanditiis dolor, ducimus fugit doloremque consectetur, deleniti eos nisi, illo repellat neque vero.
+           </p>
+           
+                 <h2 id="h3">
+            This is a Heading 3
+           </h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, libero quis id ullam, deserunt adipisci officiis doloremque temporibus consectetur molestiae excepturi perferendis reiciendis praesentium dolorem. Amet accusamus commodi inventore qui.</p>
+           <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, voluptatem! Delectus, rerum saepe! Nisi, fuga cupiditate! Nulla delectus reprehenderit cupiditate?
+           </p>
+           <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quam odio omnis ipsum? Molestias minima corrupti animi sed repudiandae facilis expedita soluta tempora? Dolorum, blanditiis. Dolorum ut blanditiis dolor, ducimus fugit doloremque consectetur, deleniti eos nisi, illo repellat neque vero.
+           </p>
+             <h2  id="h4">
+            This is a Heading 4
+           </h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, libero quis id ullam, deserunt adipisci officiis doloremque temporibus consectetur molestiae excepturi perferendis reiciendis praesentium dolorem. Amet accusamus commodi inventore qui.</p>
+           <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, voluptatem! Delectus, rerum saepe! Nisi, fuga cupiditate! Nulla delectus reprehenderit cupiditate?
+           </p>
+           <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quam odio omnis ipsum? Molestias minima corrupti animi sed repudiandae facilis expedita soluta tempora? Dolorum, blanditiis. Dolorum ut blanditiis dolor, ducimus fugit doloremque consectetur, deleniti eos nisi, illo repellat neque vero.
+           </p>
         </article>
     </main>
 </body>
