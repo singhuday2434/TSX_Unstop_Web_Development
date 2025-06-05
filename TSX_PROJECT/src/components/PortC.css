@@ -1,0 +1,111 @@
+.port-card-main{
+  height:17rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /* color: #fff777; */
+  /* background-color:  hsla(240, 1%, 15%, 0.432); */
+  /* padding: 1rem; */
+  /* text-align: left; */
+ 
+}
+
+#img6{
+     height: 90%;
+     width: 90%;
+     border-radius: 1rem;
+    transition: all 0.7s ease;
+}
+
+.card-img{
+   border-radius: 1rem;
+   /* background-color:  hsla(240, 0%, 43%, 0.251); */
+   background-color: hsla(240, 1%, 19%, 0.432) ;
+       border-top: 1px solid rgb(72, 71, 71) ;
+     border-left: 1px solid rgb(72, 71, 71) ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90%;
+   width: 90%;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   position: relative;
+   transition: all 2s linear;
+}
+.card-img:hover .card-hover{
+     display: block;
+}
+.card-img:hover .card-hover-link{
+    display: block;
+}
+.card-img:hover #img6{
+    transform: scale(1.1);
+}
+.card-title{
+    width: 100%;
+    text-align: left;
+     font-size: 1rem;
+     font-weight:700;
+     padding-left: 1.2rem;
+     color: #fff677d2;
+}
+.card-title a{
+    text-decoration: none;
+     text-align: left;
+     font-size: 1rem;
+     font-weight:700;
+     /* padding-left: 1.2rem; */
+     color: #fff677d2;
+}
+.card-category{
+     width: 100%;
+    text-align: left;
+    padding-left: 1.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(133, 133, 133, 0.861);
+}
+.card-hover{
+    top: 0;
+    left: 0;
+    display: none;
+     background-color:  hsla(240, 2%, 9%, 0.74);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    object-position: center;
+    object-fit: cover;
+    border-radius: 1rem;
+    
+
+}
+.card-hover-link{
+    display: none;
+    position: absolute;
+    /* top: 50%;
+    left:50% ; */
+    object-fit: cover;
+    object-position: center;
+    background-color: hsl(240, 1%, 17%);
+    /* padding: 0.5rem; */
+    width: 3rem;
+    height: 2.98rem;
+    border-radius: 1rem;
+     border: 1px solid #fff777;
+}
+#img7{
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    top: 8px;
+    left: 8px;
+}

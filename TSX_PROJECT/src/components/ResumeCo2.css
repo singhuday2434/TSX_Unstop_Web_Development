@@ -1,0 +1,40 @@
+.resume-card-deatails{
+   display: flex;
+   gap: 5px;
+   flex-direction: column;
+  
+   
+}
+.res-card-name{
+   font-size: 1rem;
+   font-weight: 650;
+   color: white;
+   position: relative;
+}
+
+.res-card-name::before{
+   content: "";
+   background-color: #fff677;
+   position: absolute;
+   left: -3rem;
+   height: 9px;
+   width: 9px;
+   top: 0.6rem;
+   border-radius: 50%;
+   box-shadow: 0px 0px 10px 0px rgba(192, 190, 190, 0.906);
+
+}
+.res-card-duration{
+    font-size: 1rem;
+    color: #fff677dd;
+    font-weight: 400;
+}
+.res-card-info{
+  font-size: 1rem;
+  color: rgba(192, 190, 190, 0.906);
+}
+.persuing{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+}

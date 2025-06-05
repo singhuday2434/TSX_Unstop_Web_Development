@@ -1,0 +1,28 @@
+.resume-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    color: white;
+    /* border: 1px solid white; */
+   
+}
+.resume-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: hsla(240, 1%, 15%, 0.432) ;
+    padding: 2rem;
+    border-radius: 1.5rem;
+      border-top: 1px solid rgb(72, 71, 71) ;
+     border-left: 1px solid rgb(72, 71, 71) ;
+    
+    
+}
+.res-skills-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 90%;
+
+}

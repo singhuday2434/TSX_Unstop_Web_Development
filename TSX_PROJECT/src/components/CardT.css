@@ -1,0 +1,22 @@
+.cardt-main{
+    position: relative;
+    height:10rem;
+    width: 10rem;
+    min-width: 11rem;
+    min-height: 11rem;
+   
+}
+#img4{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(1);
+    transition: all 500ms ease;
+}
+#img4:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: translateY(-10px);
+}
